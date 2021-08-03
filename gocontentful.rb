@@ -5,20 +5,20 @@
 class Gocontentful < Formula
   desc "An Contentful Entry-Reference Mapper for Go"
   homepage "https://github.com/foomo/gocontentful"
-  version "0.9.7"
+  version "0.9.8"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/foomo/gocontentful/releases/download/v0.9.7/gocontentful_0.9.7_darwin_amd64.tar.gz"
-      sha256 "8d75cbad70d66f340392db48ff99590ee50b62261629a42bbf97c344e4908459"
+      url "https://github.com/foomo/gocontentful/releases/download/v0.9.8/gocontentful_0.9.8_darwin_amd64.tar.gz"
+      sha256 "819fb950493f1bcbb873956fe24725dff1b8201be5318fd8d1a003ea080a6705"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/foomo/gocontentful/releases/download/v0.9.7/gocontentful_0.9.7_linux_amd64.tar.gz"
-      sha256 "f56e0b88e788465215c320e37e8d287366a27075845c692838368a346f7574db"
+      url "https://github.com/foomo/gocontentful/releases/download/v0.9.8/gocontentful_0.9.8_linux_amd64.tar.gz"
+      sha256 "82e767574eeb47bb712453afa638b399e381e64e97f8040979abe46745532a70"
     end
   end
 
