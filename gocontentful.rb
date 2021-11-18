@@ -5,25 +5,28 @@
 class Gocontentful < Formula
   desc "An Contentful Entry-Reference Mapper for Go"
   homepage "https://github.com/foomo/gocontentful"
-  version "1.0.0"
-  bottle :unneeded
+  version "1.0.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/foomo/gocontentful/releases/download/v1.0.0/gocontentful_1.0.0_darwin_amd64.tar.gz"
-      sha256 "08ea291accb05651b4e7007a2684de6e4adff320c400f7a69db8c6b9be227090"
+      url "https://github.com/foomo/gocontentful/releases/download/v1.0.1/gocontentful_1.0.1_darwin_amd64.tar.gz"
+      sha256 "813e10b4a9cc20257a150ce952c5b47f9f593d1e03e9ce0ae59a929b6d281e40"
+
+      def install
+        bin.install "gocontentful"
+      end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/foomo/gocontentful/releases/download/v1.0.0/gocontentful_1.0.0_linux_amd64.tar.gz"
-      sha256 "5fb0158130825d577557bd7babcee17fffb41eb28fae402dd2615307e4e4504f"
-    end
-  end
+      url "https://github.com/foomo/gocontentful/releases/download/v1.0.1/gocontentful_1.0.1_linux_amd64.tar.gz"
+      sha256 "d336acb6bd5ecac36b0a87709ab1de0c6ced28b1e96858a40573b7f6030a1c3e"
 
-  def install
-    bin.install "gocontentful"
+      def install
+        bin.install "gocontentful"
+      end
+    end
   end
 
   def caveats; <<~EOS
