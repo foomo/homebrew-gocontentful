@@ -5,20 +5,20 @@
 class Gocontentful < Formula
   desc "An Contentful Entry-Reference Mapper for Go"
   homepage "https://github.com/foomo/gocontentful"
-  version "1.0.10"
+  version "1.0.11"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/foomo/gocontentful/releases/download/v1.0.10/gocontentful_1.0.10_darwin_arm64.tar.gz"
-      sha256 "e4a2252633ce2f767325f8ad60c2c33e80635f647f7cabec293d8688e1190a70"
+      url "https://github.com/foomo/gocontentful/releases/download/v1.0.11/gocontentful_1.0.11_darwin_arm64.tar.gz"
+      sha256 "e16981ba7532f229a5a86b8d1fb8a074af63545e2d7a3fe473cb5573c9dacad8"
 
       def install
         bin.install "gocontentful"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/foomo/gocontentful/releases/download/v1.0.10/gocontentful_1.0.10_darwin_amd64.tar.gz"
-      sha256 "16eb4caa18fe630a9f0dacc731c39e6e132313dfed0ff1b9933e1cef93adec84"
+      url "https://github.com/foomo/gocontentful/releases/download/v1.0.11/gocontentful_1.0.11_darwin_amd64.tar.gz"
+      sha256 "0a9fa61e17fad6144fcb12f5fdbcdcdd829e6ea97232a6c3592b179607399340"
 
       def install
         bin.install "gocontentful"
@@ -28,16 +28,16 @@ class Gocontentful < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/foomo/gocontentful/releases/download/v1.0.10/gocontentful_1.0.10_linux_amd64.tar.gz"
-      sha256 "e4044bd6c5179c72f91126e7f913fe4164cab23e50ccffaf3821055338bd8af0"
+      url "https://github.com/foomo/gocontentful/releases/download/v1.0.11/gocontentful_1.0.11_linux_amd64.tar.gz"
+      sha256 "7d80a904d446e84be0c952500da56e15839a758928a7e3e5d3a218a8aa299be9"
 
       def install
         bin.install "gocontentful"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/foomo/gocontentful/releases/download/v1.0.10/gocontentful_1.0.10_linux_arm64.tar.gz"
-      sha256 "f4a9f7ff61d50348d810d0b61265e7103ee3aa52dfeb8aea2703674845a8d119"
+      url "https://github.com/foomo/gocontentful/releases/download/v1.0.11/gocontentful_1.0.11_linux_arm64.tar.gz"
+      sha256 "132273a2eeda23aacc36e6cebd9fb08ffbb8a6445d7cbea97044b81f532d7cf3"
 
       def install
         bin.install "gocontentful"
