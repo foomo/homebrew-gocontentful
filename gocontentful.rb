@@ -5,20 +5,20 @@
 class Gocontentful < Formula
   desc "An Contentful Entry-Reference Mapper for Go"
   homepage "https://github.com/foomo/gocontentful"
-  version "1.0.23"
+  version "1.0.24"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/foomo/gocontentful/releases/download/v1.0.23/gocontentful_1.0.23_darwin_amd64.tar.gz"
-      sha256 "5d00211fd4034d337f0b845b70b83ed9dc83baa8b3c8d3fa3270a7b5c7cbab8f"
+    if Hardware::CPU.arm?
+      url "https://github.com/foomo/gocontentful/releases/download/v1.0.24/gocontentful_1.0.24_darwin_arm64.tar.gz"
+      sha256 "54335e45bec2fc39a11675ea0a6bba91b596cb2862c4cd76b4c1d2ea58c07e01"
 
       def install
         bin.install "gocontentful"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/foomo/gocontentful/releases/download/v1.0.23/gocontentful_1.0.23_darwin_arm64.tar.gz"
-      sha256 "dba234449666df059ebf3eafaed13866f0e604b0154988eea2f0ee07522711fb"
+    if Hardware::CPU.intel?
+      url "https://github.com/foomo/gocontentful/releases/download/v1.0.24/gocontentful_1.0.24_darwin_amd64.tar.gz"
+      sha256 "9c55b7de77babe04ed4b3a7decf68b253bd837b16c7c03ac860afb5d3fa04f06"
 
       def install
         bin.install "gocontentful"
@@ -28,16 +28,16 @@ class Gocontentful < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/foomo/gocontentful/releases/download/v1.0.23/gocontentful_1.0.23_linux_amd64.tar.gz"
-      sha256 "ecbe3c5cd21138513d4e3ad79161612b739642dfcac80a66157a98ec0e0f9c89"
+      url "https://github.com/foomo/gocontentful/releases/download/v1.0.24/gocontentful_1.0.24_linux_amd64.tar.gz"
+      sha256 "0826b3660743bbdb71a01e19d90dafef36a9d84b2300bf089dbdb59fba2000c2"
 
       def install
         bin.install "gocontentful"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/foomo/gocontentful/releases/download/v1.0.23/gocontentful_1.0.23_linux_arm64.tar.gz"
-      sha256 "9b55b0fcf19a567d96819ce2f48e0767e01995cbdaee6786b16d54fdcf379f93"
+      url "https://github.com/foomo/gocontentful/releases/download/v1.0.24/gocontentful_1.0.24_linux_arm64.tar.gz"
+      sha256 "277b50b2ed24efc88e882a27d8614b661fc84174da61552ccddc7489a2bee6a2"
 
       def install
         bin.install "gocontentful"
